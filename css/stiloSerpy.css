@@ -1,0 +1,79 @@
+body {
+  background-color: #f6f2f0;
+  width: 100%;
+  height: 600px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 18px;
+}
+#navBar {
+  display: flex;
+  width: 95%;
+  height: 100px;
+  background-color: #f6f2f0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#menu {
+  display: flex;
+  width: 60%;
+  height: 50px;
+  flex-direction: row;
+  margin-left: 330px;
+  margin-top: 25px;
+}
+#menu ul {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: rgb(255, 153, 0);
+}
+  #menu ul li {
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 0 20px;
+}
+#menu ul li a {
+  margin: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+#menu ul li:hover {
+  margin: 0px;
+  margin-top: 8px;
+  background-color: coral;
+}
+#inicio {
+  display: grid;
+  grid-template-areas: "inicioUno inicioDos inicioTres"
+  "inicioUno inicioDos inicioCuatro"
+  "inicioSerpy inicioSerpy inicioSerpy"
+  ;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 300px 300px 300px;
+}
+#inicioUno {
+  grid-area: inicioUno;
+  background-color: brown;
+}
+#inicioDos {
+  grid-area: inicioDos;
+  background-color: rgb(42, 165, 52);
+}
+#inicioTres {
+  grid-area: inicioTres;
+  background-color: rgb(29, 26, 224);
+}
+#inicioCuatro {
+  grid-area: inicioCuatro;
+  background-color: rgb(26, 230, 245);
+}
+#inicioSerpy {
+  grid-area: inicioSerpy;
+  background-color: rgb(241, 189, 18);
+}
