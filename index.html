@@ -9,23 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="././css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/> 
     <title>Serpy SRL</title>
   </head>
   <body>
     <header>
       <div id="navBar">
-        <div id="logoSerpy">
-          <div id="isoLogo"></div>
-          <p id="slogan">VENTA MAYORISTA DE ARTICULOS DE LIMPIEZA</p>
-        </div>
+        <div id="logoSerpy"></div>
         <div id="menu">
           <ul>
-            <li><a href="/pages/contacto.html">INICIO</a></li>
-            <li><a href="/pages/contacto.html">PRODUCTOS</a></li>
-            <li><a href="/pages/contacto.html">OFERTAS</a></li>
-            <li><a href="/pages/contacto.html">INCORPORACIONES</a></li>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="/pages/productos.html">PRODUCTOS</a></li>
+            <li><a href="/pages/ofertas.html">OFERTAS</a></li>
+            <li><a href="/pages/incorporaciones.html">INCORPORACIONES</a></li>
             <li><a href="/pages/contacto.html">CONTACTO</a></li>
           </ul>
         </div>
@@ -36,7 +34,47 @@
       <div id="inicioDos"></div>
       <div id="inicioTres"></div>
       <div id="inicioCuatro"></div>
-      <div id="inicioSerpy"></div>
     </section>
+        <div id="isoLogoSerpy"></div>
+        <div id="inicioSerpy">
+        <div id="fotoPresentacion"></div>
+        <div id="textoPresentacion">
+          <p id="presentacion"> SERPY es una   empresa   familiar dedicada a la
+            distribución mayorista de artículos de limpieza
+            y de productos para el control de plagas urbanas.<br/><br/>
+            Con más de 30 años en el mercado, SERPY es líder en cepillera para el hogar.<br/><br/>
+            Distribuye en Mendoza, San Juan y San Luis.</p></div></div>
+    <footer>
+      <div id="pieSlide">
+        <div class="thing" id="pieSlide">
+          <div><img src="./imagenes/Logos/logoCercrin.JPG"></div>
+          <div><img src="./imagenes/Logos/logoChemotécnica.JPG"></div>
+          <div><img src="./imagenes/Logos/logoDiler.JPG"></div>
+          <div><img src="./imagenes/Logos/logoExtender.png"></div>
+          <div><img src="./imagenes/Logos/logoGeltek.JPG"></div>
+          <div><img src="./imagenes/Logos/logoGlacoxan.png"></div>
+          <div><img src="./imagenes/Logos/logoSerdis.jpeg"></div>
+          <div><img src="./imagenes/Logos/logoLoekemeyer.jpg"></div>
+        </div>
+        </div>
+    </div></footer>
+
+<script type="text/javascript" src="./js/slick.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.thing').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+		
+});
+</script>
   </body>
 </html>

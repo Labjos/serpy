@@ -3,22 +3,23 @@ body {
   width: 100%;
   height: 600px;
   font-family: "Archivo Narrow", sans-serif;
+  color: #0000ff;
   font-size: 18px;
 }
 #navBar {
   display: flex;
   width: 95%;
-  height: 100px;
+  height: 90px;
   background-color: #f6f2f0;
   margin-left: auto;
   margin-right: auto;
 }
 #menu {
   display: flex;
-  width: 60%;
+  width: 50%;
   height: 50px;
   flex-direction: row;
-  margin-left: 330px;
+  margin-left: 280px;
   margin-top: 25px;
 }
 #menu ul {
@@ -29,51 +30,335 @@ body {
   padding: 0px;
   text-decoration: none;
   list-style-type: none;
-  background-color: rgb(255, 153, 0);
+  background-color: #ffffff;
 }
-  #menu ul li {
+#menu ul li {
   text-decoration: none;
   list-style-type: none;
-  justify-content: space-between;
-  margin-top: 8px;
-  padding: 0 20px;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 8px 22px;
 }
 #menu ul li a {
   margin: 0px;
+  color: #0000ff;
   text-decoration: none;
   list-style-type: none;
 }
 #menu ul li:hover {
-  margin: 0px;
-  margin-top: 8px;
-  background-color: coral;
+  background-color: #0000ff;
+  color: #ffffff;
+}
+#menu ul li a:hover {
+  color: #ffffff;
+}
+#logoSerpy {
+  width: 40%;
+  height: 72px;
+  background-image: url(../imagenes/logoLeyendaSerpy.png);
+  background-size: cover;
+  margin-top: 10px;
 }
 #inicio {
   display: grid;
-  grid-template-areas: "inicioUno inicioDos inicioTres"
-  "inicioUno inicioDos inicioCuatro"
-  "inicioSerpy inicioSerpy inicioSerpy"
-  ;
+  grid-template-areas:
+    "inicioUno inicioDos inicioTres"
+    "inicioUno inicioDos inicioCuatro";
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 245px 245px;
 }
 #inicioUno {
   grid-area: inicioUno;
-  background-color: brown;
+  background-image: url(../imagenes/baldeCeleste.jpg);
+  background-size: cover;
+  border: 3px solid #ffffff;
 }
 #inicioDos {
   grid-area: inicioDos;
-  background-color: rgb(42, 165, 52);
+  background-image: url(../imagenes/escobillonRosa.JPG);
+  background-size: cover;
+  border: 3px solid #ffffff;
 }
 #inicioTres {
   grid-area: inicioTres;
-  background-color: rgb(29, 26, 224);
+  background-image: url(../imagenes/jardinPulverizador.jpg);
+  background-size: cover;
+  border: 3px solid #ffffff;
 }
 #inicioCuatro {
   grid-area: inicioCuatro;
-  background-color: rgb(26, 230, 245);
+  background-image: url(../imagenes/repasadores.JPG);
+  background-size: cover;
+  border: 3px solid #ffffff;
 }
 #inicioSerpy {
-  grid-area: inicioSerpy;
-  background-color: rgb(241, 189, 18);
+  display: flex;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#isoLogoSerpy {
+  width: 27%;
+  height: 73px;
+  background-image: url(../imagenes/logoLeyendaSerpy.png);
+  background-size: cover;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+#fotoPresentacion {
+  margin-top: 10px;
+  width: 90%;
+  height: 400px;
+  background-image: url(../imagenes/baldeVerde.jpeg);
+  background-size: cover;
+}
+#textoPresentacion {
+  grid-area: textoPresentacion;
+  width: 100%;
+  color: #0000ff;
+  margin-top: 10px;
+  font-size: 25px;
+  border: 1px solid #DF3A01;
+}
+#presentacion{
+  width: 80%;
+  height: 300px;
+  margin-top: 70px;
+  margin-left: 50px;
+  text-align: center;
+}
+.pieSlide {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+#productos {
+  display: flex;
+}
+#productoUno {
+  width: 16%;
+  height: 320px;
+  background-image: url(../imagenes/chicaPulverizando.png);
+  background-size: cover;
+  border: 2px solid #ffffff;
+}
+#productoDos {
+  width: 16%;
+  height: 320px;
+  background-image: url(../imagenes/cepillosMadera.JPG);
+  background-size: cover;
+  border: 2px solid #ffffff;
+}
+#productoTres {
+  width: 16%;
+  height: 320px;
+  background-image: url(../imagenes/pañoRejilla.JPG);
+  background-size: cover;
+  border: 2px solid #ffffff;
+}
+#productoCuatro {
+  width: 16%;
+  height: 320px;
+  background-image: url(../imagenes/pelaPapas.JPG);
+  background-size: cover;
+  border: 2px solid #ffffff;
+}
+#productoCinco {
+  width: 16%;
+  height: 320px;
+  background-image: url(../imagenes/brochesPlasticos.JPG);
+  background-size: cover;
+  border: 2px solid #ffffff;
+}
+#productoSeis {
+  width: 16%;
+  height: 320px;
+  background-image: url(../imagenes/burletes.JPG);
+  background-size: cover;
+  border: 2px solid #ffffff;
+}
+#botones {
+  display: flex;
+}
+.textBotOne {
+  color: #ffffff;
+  font-size: 22px;
+  list-style-type: none;
+  text-decoration-line: none;
+  margin: 0;
+}
+.textBotTwo {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.textBotThree {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  list-style-type: none;
+}
+#botonUno {
+  width: 16%;
+  height: 100px;
+  background-color: #04B404;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+#botonDos {
+  width: 16%;
+  height: 100px;
+  background-color: #D7DF01;
+  border: 2px solid #ffffff;
+}
+#botonTres {
+  width: 16%;
+  height: 100px;
+  background-color: #013ADF;
+  border: 2px solid #ffffff;
+}
+#botonCuatro {
+  width: 16%;
+  height: 100px;
+  background-color: #DF3A01;
+  border: 2px solid #ffffff;
+}
+#botonCinco {
+  width: 16%;
+  height: 100px;
+  background-color: #088A4B;
+  border: 2px solid #ffffff;
+}
+#botonSeis {
+  width: 16%;
+  height: 100px;
+  background-color: #FE9A2E;
+  border: 2px solid #ffffff;
+}
+#textoPie {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+#ofertas {
+  display: flex;
+  width: 95%;
+  height: 500px;
+  background-image: url(../imagenes/fondoBanderines.jpg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+#incorporaciones {
+  display: flex;
+  width: 95%;
+  height: 500px;
+  background-image: url(../imagenes/fondoPuertas.jpg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contacto {
+  display: flex;
+  width: 99%;
+  height: 480px;
+  margin-right: auto;
+  margin-right: auto;
+}
+#mapa {
+  width: 100%;
+  height: 450px;
+  float: left;
+  justify-items: center;
+}
+#datosSerpy {
+  width: 100%;
+  height: auto;
+}
+#direccion {
+  width: 250px;
+  height: 150px;
+  background-color: #ffffff;
+  float: left;
+  margin-left: 20px;
+}
+.textDireccion {
+  color: #0000ff;
+  font-size: 22px;
+  text-align: center;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+#datosContacto {
+  width: 250px;
+  height: 150px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+#datosMails {
+  width: 85%;
+  height: 200px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#fotoJardin {
+  width: 20%;
+  height: 500px;
+  background-image: url(../imagenes/seccionJardineria.png);
+  background-size: cover;
+  float: left;
+}
+#transJardin {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff80;
+  float: left;
+  margin-top: 50px;
+}
+#fichasJardin {
+  display: flex;
+  width: 75%;
+  height: 500px;
+}
+.ficha {
+  width: 150px;
+  height: 220px;
+  background-color: #ffffff;
+  border: 1px solid #FE9A2E;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#fotoFicha {
+  width: 90%;
+  height: 100px;
+  background-image: url(../imagenes/pelaPapas.JPG);
+  background-size: cover;
+  margin-top: 10px;
+  margin-left: 7px;
+  border: 2px solid #FE9A2E;
+}
+.nombreFicha {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.detalleFicha {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+}
+.marcaFicha {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
 }
