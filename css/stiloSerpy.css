@@ -3,7 +3,7 @@ body {
   width: 100%;
   height: 600px;
   font-family: "Archivo Narrow", sans-serif;
-  color: #0000ff;
+  color: #0040FF;
   font-size: 18px;
 }
 #navBar {
@@ -41,12 +41,12 @@ body {
 }
 #menu ul li a {
   margin: 0px;
-  color: #0000ff;
+  color: #0040FF;
   text-decoration: none;
   list-style-type: none;
 }
 #menu ul li:hover {
-  background-color: #013ADF;
+  background-color: #0040FF;
 }
 #menu ul li a:hover {
   color: #ffffff;
@@ -90,6 +90,35 @@ body {
   background-size: cover;
   border: 3px solid #ffffff;
 }
+#transUno {
+  width: 100%;
+  height: 70px;
+  background-color: #078bf785;
+  margin-top: 110px;
+} 
+.textoTrans {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+}
+.textoTransDos {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+#transDos {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff5b;
+  margin-top: 20px;
+} 
+#transTres {
+  width: 100%;
+  height: 70px;
+  background-color: #08752965;
+  margin-top: 160px;
+} 
 #inicioSerpy {
   display: flex;
   width: 97%;
@@ -110,11 +139,11 @@ body {
   height: 400px;
   background-image: url(../imagenes/baldeVerde.jpeg);
   background-size: cover;
-}
+} 
 #textoPresentacion {
   grid-area: textoPresentacion;
   width: 100%;
-  color: #0000ff;
+  color: #0040FF;
   margin-top: 10px;
   font-size: 25px;
   border: 1px solid #DF3A01;
@@ -126,11 +155,43 @@ body {
   margin-left: 50px;
   text-align: center;
 }
-.pieSlide {
+#pieSlide {
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 90px;
+  margin: 0;
+  background-color: #ffffff;
 }
+.center{
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+.centerDos{
+  margin: 0;
+  margin-top: 10px;
+}
+.centerTres{
+  margin: 0;
+  margin-left: 50px;
+  margin-top: 2px;
+}
+.centerCua{
+  margin: 0;
+  margin-left: 50px;
+  margin-top: 12px;
+}
+.centerCin{
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.centerSeis{
+  margin: 0;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
 #productos {
   display: flex;
 }
@@ -219,7 +280,7 @@ body {
 #botonTres {
   width: 16%;
   height: 100px;
-  background-color: #013ADF;
+  background-color: #0040FF;
   border: 2px solid #ffffff;
 }
 #botonCuatro {
@@ -254,6 +315,33 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.ofertaUno {
+  width: 300px;
+  height: 280px;
+  background-color: #ffffff80;
+  margin-top: 150px;
+  margin-left:50px;
+}
+.textOfert {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  color: #ffffff;
+  font-family:'Architects Daughter', cursive;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 250px;
+  margin-left:15px;
+}
+#fotoOferta {
+  width: 90%;
+  height: 250px;
+  background-image: url(../imagenes/brochesPlasticos.JPG);
+  background-size: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 2px solid #FE9A2E;
+}
 #incorporaciones {
   display: flex;
   width: 95%;
@@ -263,9 +351,36 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.incorporacionUno {
+  width: 300px;
+  height: 280px;
+  background-color: #ffffff80;
+  margin-top: 150px;
+  margin-left:50px;
+}
+.textIncorp {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  color: #ffffff;
+  font-family:'Architects Daughter', cursive;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 250px;
+  margin-left:15px;
+}
+#fotoIncorporaciones {
+  width: 90%;
+  height: 250px;
+  background-image: url(../imagenes/cepillosMadera.JPG);
+  background-size: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 2px solid #FE9A2E;
+}
 #contacto {
   display: flex;
-  width: 99%;
+  width: 90%;
   height: 480px;
   margin-right: auto;
   margin-right: auto;
@@ -281,14 +396,14 @@ body {
   height: auto;
 }
 #direccion {
-  width: 250px;
-  height: 150px;
+  width: 260px;
+  height: 160px;
   background-color: #ffffff;
   float: left;
   margin-left: 20px;
 }
 .textDireccion {
-  color: #0000ff;
+  color: #0040FF;
   font-size: 22px;
   text-align: center;
   float: left;
@@ -296,21 +411,21 @@ body {
   margin-top: 20px;
 }
 #datosContacto {
-  width: 250px;
-  height: 150px;
+  width: 260px;
+  height: 160px;
   background-color: #ffffff;
   margin-bottom: 20px;
-  margin-left: 300px;
+  margin-left: 310px;
 }
 #datosMails {
-  width: 84%;
-  height: 200px;
+  width: 96%;
+  height: 230px;
   background-color: #ffffff;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .textDatos {
-  color: #0000ff;
+  color: #0040FF;
   font-size: 22px;
   text-align: center;
   float: left;
@@ -327,8 +442,14 @@ body {
 #transJardin {
   width: 100%;
   height: 200px;
-  background-color: #ffffff80;
+  background-color: #ffffff70;
   float: left;
+  margin-top: 50px;
+}
+.textoProd {
+  color: #0040FF;
+  text-align: center;
+  font-size: 24px;
   margin-top: 50px;
 }
 #fichasJardin {
@@ -368,4 +489,52 @@ body {
   margin: 0;
   text-align: center;
   font-size: 22px;
+}
+#fotoCepilleria {
+  width: 20%;
+  height: 500px;
+  background-image: url(../imagenes/cepillosMadera.JPG);
+  background-size: cover;
+  float: left;
+}
+.transCepilleria {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff70;
+  float: left;
+  margin-top: 50px;
+}
+.textoCep {
+  color: #0040FF;
+  text-align: center;
+  font-size: 27px;
+  margin-top: 35px;
+}
+#fotoTextil {
+  width: 20%;
+  height: 500px;
+  background-image: url(../imagenes/pañoRejilla.JPG);
+  background-size: cover;
+  float: left;
+}
+#fotoBazar {
+  width: 20%;
+  height: 500px;
+  background-image: url(../imagenes/pelaPapas.JPG);
+  background-size: cover;
+  float: left;
+}
+#fotoPlasticos {
+  width: 20%;
+  height: 500px;
+  background-image: url(../imagenes/brochesPlasticos.JPG);
+  background-size: cover;
+  float: left;
+}
+#fotoBurlete {
+  width: 20%;
+  height: 500px;
+  background-image: url(../imagenes/burletes.JPG);
+  background-size: cover;
+  float: left;
 }
