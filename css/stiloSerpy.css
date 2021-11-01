@@ -331,13 +331,14 @@ body {
   font-size: 35px;
   text-align: center;
   margin-top: 250px;
-  margin-left:15px;
+  margin-left:5px;
 }
 #fotoOferta {
   width: 90%;
   height: 250px;
-  background-image: url(../imagenes/brochesPlasticos.JPG);
+  background-image: url(../imagenes/Productos/Ofertas/Gomaton.png);
   background-size: cover;
+  background-color: #DF3A01;
   margin-top: 10px;
   margin-left: 10px;
   border: 2px solid #FE9A2E;
@@ -351,10 +352,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.incorporacionUno {
-  width: 300px;
+.incorporacion {
+  display: flex;
+  width: 350px;
   height: 280px;
-  background-color: #ffffff80;
   margin-top: 150px;
   margin-left:50px;
 }
@@ -366,13 +367,13 @@ body {
   font-family:'Architects Daughter', cursive;
   font-size: 35px;
   text-align: center;
-  margin-top: 250px;
+  float: left;
+  margin-top: 10px;
   margin-left:15px;
 }
-#fotoIncorporaciones {
-  width: 90%;
-  height: 250px;
-  background-image: url(../imagenes/cepillosMadera.JPG);
+.fotoIncorporaciones {
+  width: 80%;
+  height: 200px;
   background-size: cover;
   margin-top: 10px;
   margin-left: 10px;
