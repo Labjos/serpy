@@ -337,10 +337,23 @@ ul.show {
 }
 .ofertaUno {
   display: flex;
-  width: 30%;
-  height: 300px;
-  background-color: #61d2e080;
-  margin-top: 150px;
+  width: 40%;
+  height: 200px;
+  margin-top: 240px;
+  margin-left:50px;
+}
+.ofertaDos {
+  display: flex;
+  width: 40%;
+  height: 150px;
+  margin-top: 240px;
+  margin-left:50px;
+}
+.ofertaTres {
+  display: flex;
+  width: 40%;
+  height: 100px;
+  margin-top: 240px;
   margin-left:50px;
 }
 #textoOfert {
@@ -352,17 +365,16 @@ ul.show {
   font-family: 'Shadows Into Light', cursive;
   font-size: 25px;
   text-align: center;
-  margin-top: 320px;
+  margin-top: 50px;
   margin-left:20px;
 }
 #fotoOferta {
-  width: 100%;
-  height: 300px;
-  background-image: url(../imagenes/Productos/Ofertas/Gomaton.png);
+  width: 40%;
+  height: 150px;
+  background-color: #2e76e257;
   background-size: cover;
   border: 2px solid #FE9A2E;
 }
-
 #incorporacionUno {
   width: 25%;
   height: 200px;
@@ -438,36 +450,6 @@ ul.show {
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
-}
-#incorporacionUno {
-  width: 17%;
-  height: 200px;
-  margin-top: 40px;
-}
-#incorporacionDos {
-  width: 17%;
-  height: 200px;
-  margin-top: 40px;
-}
-#incorporacionTres {
-  width: 17%;
-  height: 200px;
-  margin-top: 40px;
-}
-#incorporacionCuatro {
-  width: 17%;
-  height: 200px;
-  margin-top: 40px;
-}
-#incorporacionCinco {
-  width: 17%;
-  height: 200px;
-  margin-top: 40px;
-}
-#incorporacionSeis {
-  width: 17%;
-  height: 200px;
-  margin-top: 40px;
 }
 #contacto {
   display: flex;
@@ -666,16 +648,662 @@ ul.show {
   float: left;
 }
 @media all and (min-width: 600px) and (max-width: 1060px) {
-  body {
-      width: 1060px;
-      height: 100%;
+body {
+    background-color: #f6f2f0;
+    width: 100%;
+    height: 100%;
+    font-family: "Archivo Narrow", sans-serif;
+    color: #2b5ef7;
+    font-size: 18px;
+  }
+  #navBar {
+    display: block;
+    width: 95%;
+    height: 150px;
+    background-color: #f6f2f0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #logocompleto {
+    display: block;
+    width: 25%;
+    height: 100px;
+    font-size: 13px;
+    margin: 0;
+  }
+  #slogan{
+    width: 400px;
+    height: 30px;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  #menu {
+    display: flex;
+    width: 95%;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #244fcf;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 5px 0 10px rgba(0,0,0 ,.4);
+  }
+  #menu ul {
+    display: flex;
+    width: 80%;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  #menu ul li {
+    margin: 0 5px;
+    padding: 0px;
+  }
+  #menu ul li a {
+   padding: 4px 15px;
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  #menu ul li:hover, ul li.active{
+    background-color: rgba(0,0,0 ,.4);
+    transition: .4s;
+  }
+  .bottonMenu {
+    margin-right:30px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+  }
+  ul.show {
+    top: 65px; 
+  }
+  #logoSerpy {
+    width: 30%;
+    height: 70px;
+    background-image: url(../serpyLogo.png);
+    background-size: cover;
+    margin-top: 5px;
+  }
+  #inicio {
+    display: grid;
+    grid-template-areas:
+      "inicioUno inicioDos inicioTres"
+      "inicioUno inicioDos inicioCuatro";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 240px 240px;
+    margin-top: 5px;
+  }
+  #inicioUno {
+    grid-area: inicioUno;
+    background-image: url(../imagenes/baldeCeleste.jpg);
+    background-size: cover;
+    border: 3px solid #ffffff;
+  }
+  #inicioDos {
+    grid-area: inicioDos;
+    background-image: url(../imagenes/escobillonRosa.JPG);
+    background-size: cover;
+    border: 3px solid #ffffff;
+  }
+  #inicioTres {
+    grid-area: inicioTres;
+    background-image: url(../imagenes/jardinPulverizador.jpg);
+    background-size: cover;
+    border: 3px solid #ffffff;
+  }
+  #inicioCuatro {
+    grid-area: inicioCuatro;
+    background-image: url(../imagenes/repasa.jpg);
+    background-size: cover;
+    border: 3px solid #ffffff;
+  }
+  #transUno {
+    width: 100%;
+    height: 40%;
+    background-color: #078bf785;
+    margin-top: 110px;
+  } 
+  .textoTrans {
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+  }
+  .textoTransDos {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+  }
+  #transDos {
+    width: 100%;
+    height: 30%;
+    background-color: #ffffff5b;
+    margin-top: 20px;
+  } 
+  #transTres {
+    width: 100%;
+    height: 40%;
+    background-color: #08752965;
+    margin-top: 100px;
+  } 
+  #transCuatro {
+    width: 100%;
+    height: 70px;
+    background-color: #e46d0c65;
+    margin-top: 60px;
+  } 
+  #inicioSerpy {
+    display: flex;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #isoLogoSerpy {
+    width: 27%;
+    height: 73px;
+    background-image: url(../imagenes/logoLeyendaSerpy.png);
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  #fotoPresentacion {
+    margin-top: 10px;
+    width: 90%;
+    height: 400px;
+    background-image: url(../imagenes/baldeVerde.jpeg);
+    background-size: cover;
+  } 
+  #textoPresentacion {
+    grid-area: textoPresentacion;
+    width: 100%;
+    color: #0040FF;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid #DF3A01;
+  }
+  #presentacion{
+    width: 80%;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  #pieSlide {
+    display: flex;
+    width: 130%;
+    height: 90px;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  .center{
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .centerDos{
+    margin: 0;
+    margin-top: 10px;
+  }
+  .centerTres{
+    margin: 0;
+    margin-left: 0px;
+    margin-top: 2px;
+  }
+  .centerCua{
+    margin: 0;
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  .centerCin{
+    margin: 0;
+    margin-left: 0px;
+    margin-top: 3px;
+  }
+  .centerSeis{
+    margin: 0;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  #productos {
+    display: grid;
+    grid-template-areas: "productoUno productoDos productoTres productoCuatro productoCinco productoSeis"
+    "botonUno botonDos botonTres botonCuatro botonCinco botonSeis";
+    grid-template-columns: 16% 16% 17% 17% 16% 16%;
+    grid-template-rows: 320px 100px;
+    margin-top: 5px;
+  }
+  #productoUno {
+    grid-area: productoUno;
+    background-image: url(../imagenes/chicaPulverizando.png);
+    background-size: cover;
+    border: 2px solid #ffffff;
+  }
+  #productoDos {
+    grid-area: productoDos;
+    background-image: url(../imagenes/cepillosMadera.JPG);
+    background-size: cover;
+    border: 2px solid #ffffff;
+  }
+  #productoTres {
+    grid-area: productoTres;
+    background-image: url(../imagenes/pañoRejilla.JPG);
+    background-size: cover;
+    border: 2px solid #ffffff;
+  }
+  #productoCuatro {
+    grid-area: productoCuatro;
+    background-image: url(../imagenes/pelaPapas.JPG);
+    background-size: cover;
+    border: 2px solid #ffffff;
+  }
+  #productoCinco {
+    grid-row: productoCinco;
+    background-image: url(../imagenes/brochesPlasticos.JPG);
+    background-size: cover;
+    border: 2px solid #ffffff;
+  }
+  #productoSeis {
+    grid-area: productoSeis;
+    background-image: url(../imagenes/burletes.JPG);
+    background-size: cover;
+    border: 2px solid #ffffff;
+  }
+  .textBotOne {
+    color: #ffffff;
+    font-size: 22px;
+    list-style-type: none;
+    text-decoration-line: none;
+    margin: 0;
+  }
+  .textBotTwo {
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .textBotThree {
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    list-style-type: none;
+  }
+  #botonUno {
+    grid-area: botonUno;
+    background-color: #04B404;
+    border: 2px solid #ffffff;
+    text-align: center;
+  }
+  #botonDos {
+    grid-area: botonDos;
+    background-color: #D7DF01;
+    border: 2px solid #ffffff;
+  }
+  #botonTres {
+    grid-area: botonTres;
+    background-color: #0040FF;
+    border: 2px solid #ffffff;
+  }
+  #botonCuatro {
+    grid-area: botonCuatro;
+    background-color: #DF3A01;
+    border: 2px solid #ffffff;
+  }
+  #botonCinco {
+    grid-area: botonCinco;
+    background-color: #088A4B;
+    border: 2px solid #ffffff;
+  }
+  #botonSeis {
+    grid-area: botonSeis;
+    background-color: #FE9A2E;
+    border: 2px solid #ffffff;
+  }
+  #textoPie {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+  }
+  #ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 100%;
+    background-image: url(../imagenes/fondoBanderines.jpg);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+  .ofertaUno {
+    display: flex;
+    width: 60%;
+    height: 200px;
+    margin-top: 340px;
+    margin-left:50px;
+  }
+  .ofertaDos {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:50px;
+  }
+  .ofertaTres {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:50px;
+  }
+  #textoOfert {
+    width: 200px;
+    height: 200px;
+  }
+  .textOfert{  
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left:20px;
+  }
+  #fotoOferta {
+    width: 50%;
+    height: 150px;
+    background-color: #2e76e257;
+    background-size: cover;
+    border: 2px solid #FE9A2E;
+  }
+  #incorporacionUno {
+    width: 20%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:10px;
+  }
+  #incorporacionDos {
+    width: 20%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:10px;
+  }
+  #incorporacionTres {
+    width: 20%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:10px;
+  }
+  #incorporacionCuatro {
+    width: 20%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:10px;
+  }
+  #incorporacionCinco {
+    width: 20%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:10px;
+  }
+  #incorporacionSeis {
+    width: 20%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left:10px;
+  }
+  .textIncorp {
+    width: 180px;
+    height: 280px;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    float: left;
+    margin-left:10px;
+  }
+  .fotoIncorporaciones {
+    width: 100%;
+    height: 80%x;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid #FE9A2E;
+  }
+  .textIncorp {
+    width: 160px;
+    height: 280px;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    float: left;
+    margin-left:10px;
+  }
+  #incorporaciones{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/fondoPuertas.jpg);
+    background-size: cover;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contacto {
+    display: block;
+    width: 95%;
+    height: 100%;
+    margin-right: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+  #mapa {
+    width: 100%;
+    height: 450px;
+    justify-items: center;
+    background-color: #ffffff;
+    border: 1px solid #DF3A01;
+  }
+  #datosSerpy {
+    width: 100%;
+    height: 450px;
+  }
+  #direccion {
+    width: 100%;
+    height: 180px;
+    margin-left: 20px;
+  }
+  .textDireccion {
+    display: flex;
+    
+    color: #0040FF;
+    width: 80%;
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #datosMails {
+    width: 96%;
+    height: 240px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  #otrosDatos {
+    display: block;
+  }
+  .textDatos {
+    color: #0040FF;
+    font-size: 22px;
+    text-align: center;
+    float: left;
+    margin-left: 30px;
+    margin-top: 2px;
+  }
+  .subProductos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  #fotoJardin {
+    width: 20%;
+    height: 500px;
+    background-image: url(../imagenes/jardin.jpg);
+    background-size: cover;
+  }
+  #transpJardin {
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff70;
+    float: left;
+    margin-top: 150px;
+  }  
+  .textoProd {
+    width: 100%;
+    height: 80px;
+    color: #0040FF;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  .fichasProductos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 85%;
+    float: right;
+  }
+  .ficha {
+    width: 180px;
+    height: 240px;
+    background-color: #ffffff;
+    border: 1px solid #FE9A2E;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  #fotoFicha {
+    width: 80%;
+    height: 110px;
+    background-image: url(../imagenes/pelaPapas.JPG);
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 7px;
+    border: 2px solid #FE9A2E;
+  }
+  .nombreFicha {
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  .detalleFicha {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  .marcaFicha {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  #fotoCepilleria {
+    width: 20%;
+    height: 500px;
+    background-image: url(../imagenes/cepillosMadera.JPG);
+    background-size: cover;
+    float: left;
+  }
+  .transCepilleria {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff70;
+    float: left;
+    margin-top: 50px;
+  }
+  #arriba {
+    width: 25%;
+    height: 50px;
+    background-color: #244fcf;
+    border: 1px solid #fff;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  #arriba a{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .textoCep {
+    color: #0040FF;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 35px;
+  }
+  #fotoTextil {
+    width: 20%;
+    height: 500px;
+    background-image: url(../imagenes/pañoRejilla.JPG);
+    background-size: cover;
+    float: left;
+  }
+  #fotoBazar {
+    width: 20%;
+    height: 500px;
+    background-image: url(../imagenes/pelaPapas.JPG);
+    background-size: cover;
+    float: left;
+  }
+  .fotoBazarProd {
+    width: 90%;
+    height: 140px;
+    background-size: cover;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .datosFichaProd {
+    margin: 0;
+    margin-top: 5px;
+    width: 180px;
+    height: 90px;
+  }
+  #fotoPlasticos {
+    width: 20%;
+    height: 500px;
+    background-image: url(../imagenes/brochesPlasticos.JPG);
+    background-size: cover;
+    float: left;
+  }
+  #fotoBurlete {
+    width: 20%;
+    height: 500px;
+    background-image: url(../imagenes/burletes.JPG);
+    background-size: cover;
+    float: left;
   }
 }
 @media all and (max-width: 599px) {
   body {
     width: 100%;
     margin: 0;
-  }
+}
   #navBar {
     display: block;
     width: 100%;
@@ -683,14 +1311,14 @@ ul.show {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   #logocompleto {
     display: block;
     width: 100%;
     height: 70px;
     font-size: 13px;
     margin: 0;
-  }
+}
   #slogan{
     width: 100%;
     text-align: center;
@@ -776,7 +1404,7 @@ ul.show {
     background-image: url(../imagenes/repasaMovil.jpg);
     background-size: cover;
     border: 3px solid #ffffff;
-  }
+ }
   #transUno {
     width: 100%;
     height: 70px;
@@ -849,7 +1477,7 @@ ul.show {
     text-align: center;
   }
   #pieSlide {
-    width: 100%;
+    width: 170%;
     height: 90px;
     margin: 0;
     background-color: #ffffff;
@@ -999,70 +1627,118 @@ ul.show {
     margin-top: 5px;
   }
   .ofertaUno {
-    width: 80%;
+    display: block;
+    width: 100%;
     height: 100%;
-    background-color: #ffffff80;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .ofertaDos {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left:0px;
+  }
+  .ofertaTres {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  #textoOfert {
+    width: 200px;
+    height: 200px;
+  }
+  .textOfert{  
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #fotoOferta {
+    width: 50%;
+    height: 150px;
+    background-color: #2e76e257;
+    background-size: cover;
+    margin-top: 50px;
+    margin-left: 80px;
+    border: 2px solid #FE9A2E;
+  }
+  #incorporacionUno {
+    display: block;
+    width: 55%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #incorporacionDos {
+    width: 55%;
+    height: 180px;
     margin-top: 10px;
     margin-left:auto;
     margin-right: auto;
   }
-  .textOfert {
-    width: 200px;
-    height: 200px;
-    margin: 0;
-    color: #ffffff;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 50px;
-    margin-left:5px;
-  }
-  #fotoOferta {
-    width: 90%;
-    height: 250px;
-    background-image: url(../imagenes/Productos/Ofertas/Gomaton.png);
-    background-size: cover;
-    background-color: #DF3A01;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 2px solid #FE9A2E;
-  }
-  #incorporaciones {
-    display: block;
-    width: 100%;
+  #incorporacionTres {
+    width: 55%;
     height: 100%;
-    background-image: url(../imagenes/fondoBanderines.jpg);
-    background-size: cover;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  #incorporacionCuatro {
+    width: 55%;
+    height: 100%;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
   }
-  .incorporacion {
-    display: block;
-    width: 350px;
-    height: 280px;
-    margin-top: 150px;
-    margin-left:50px;
-  }
-  .textIncorp {
-    width: 200px;
-    height: 200px;
-    margin: 0;
-    color: #ffffff;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 30px;
-    text-align: center;
-    float: left;
+  #incorporacionCinco {
+    width: 55%;
+    height: 100%;
     margin-top: 10px;
-    margin-left:15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #incorporacionSeis {
+    width: 55%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .fotoIncorporaciones {
     width: 80%;
-    height: 200px;
+    height: 80%;
     background-size: cover;
     margin-top: 10px;
-    margin-left: 10px;
+   margin-left: auto;
+   margin-right: auto;
     border: 2px solid #FE9A2E;
+  }
+  .textIncorp {
+    width: 200px;
+    height: 180px;
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  #incorporaciones{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/fondoPuertas.jpg);
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #contacto {
     display: block;
@@ -1073,14 +1749,14 @@ ul.show {
     margin-top: 5px;
   }
   #mapa {
-    width: 60%;
+    width: 100%;
     height: 450px;
     float: left;
     justify-items: center;
     border: 1px solid #DF3A01;
   }
   #datosSerpy {
-    width: 700px;
+    width: 100%;
     height: 450px;
   }
   #direccion {
@@ -1103,7 +1779,7 @@ ul.show {
     height: 225px;
     background-color: #eca60f93;
     margin-left: 20px;
-    margin-top: 225px;
+    margin-top: 20px;
   }
   .textDatos {
     color: #0040FF;
@@ -1120,7 +1796,7 @@ ul.show {
     margin-top: 10px;
   }
   #fotoJardin {
-    width: 265px;
+    width: 100%;
     height: 500px;
     background-image: url(../imagenes/jardin.jpg);
     background-size: cover;
@@ -1139,23 +1815,23 @@ ul.show {
     text-align: center;
     font-size: 24px;
     margin-top: 50px;
-    
-  }
+}
   .fichasProductos {
     display: block;
-    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
     height: 85%;
-    float: right;
-  }
+}
   .ficha {
     width: 180px;
     height: 240px;
     background-color: #ffffff;
     border: 1px solid #FE9A2E;
     margin-top: 5px;
-    margin-left: 20px;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
   #fotoFicha {
     width: 80%;
     height: 110px;
@@ -1182,7 +1858,7 @@ ul.show {
     font-size: 18px;
   }
   #fotoCepilleria {
-    width: 20%;
+    width: 100%;
     height: 500px;
     background-image: url(../imagenes/cepillosMadera.JPG);
     background-size: cover;
@@ -1196,12 +1872,12 @@ ul.show {
     margin-top: 50px;
   }
   #arriba {
-    width: 150px;
+    width: 60%;
     height: 50px;
     background-color: #244fcf;
     border: 1px solid #fff;
-    margin-top: 80px;
-    margin-left: 40px;
+    margin-top: 40px;
+    margin-left: 70px;
   }
   #arriba a{
     color: #ffffff;
@@ -1210,28 +1886,22 @@ ul.show {
     list-style-type: none;
     text-decoration: none;
   }
-  .textoCep {
-    color: #0040FF;
-    text-align: center;
-    font-size: 27px;
-    margin-top: 35px;
-  }
-  #fotoTextil {
-    width: 20%;
+#fotoTextil {
+    width: 100%;
     height: 500px;
     background-image: url(../imagenes/pañoRejilla.JPG);
     background-size: cover;
     float: left;
   }
   #fotoBazar {
-    width: 20%;
+    width: 100%;
     height: 500px;
     background-image: url(../imagenes/pelaPapas.JPG);
     background-size: cover;
     float: left;
   }
   .fotoBazarProd {
-    width: 90%;
+    width: 100%;
     height: 140px;
     background-size: cover;
     align-items: center;
@@ -1245,18 +1915,17 @@ ul.show {
     height: 90px;
   }
   #fotoPlasticos {
-    width: 20%;
+    width: 100%;
     height: 500px;
     background-image: url(../imagenes/brochesPlasticos.JPG);
     background-size: cover;
     float: left;
   }
   #fotoBurlete {
-    width: 20%;
+    width: 100%;
     height: 500px;
     background-image: url(../imagenes/burletes.JPG);
     background-size: cover;
     float: left;
   }
-  
 }
