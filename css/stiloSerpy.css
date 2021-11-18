@@ -375,44 +375,24 @@ ul.show {
   background-size: cover;
   border: 2px solid #FE9A2E;
 }
-#incorporacionUno {
-  width: 25%;
-  height: 200px;
-  margin-top: 50px;
-  margin-left:10px;
+#incorporaciones{
+  display: flex;
+  width: 95%;
+  height: 470px;
+  background-image: url(../imagenes/fondoPuertas.jpg);
+  background-size: cover;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#incorporacionDos {
-  width: 25%;
+.incorporacionUno {
+  width: 15%;
   height: 200px;
-  margin-top: 50px;
-  margin-left:10px;
-}
-#incorporacionTres {
-  width: 25%;
-  height: 200px;
-  margin-top: 50px;
-  margin-left:10px;
-}
-#incorporacionCuatro {
-  width: 25%;
-  height: 200px;
-  margin-top: 50px;
-  margin-left:10px;
-}
-#incorporacionCinco {
-  width: 25%;
-  height: 200px;
-  margin-top: 50px;
-  margin-left:10px;
-}
-#incorporacionSeis {
-  width: 25%;
-  height: 200px;
-  margin-top: 50px;
-  margin-left:10px;
+  margin-top: 40px;
+  margin-left:5px;
 }
 .textIncorp {
-  width: 180px;
+  width: 220px;
   height: 280px;
   margin: 0;
   color: #ffffff;
@@ -441,40 +421,21 @@ ul.show {
   float: left;
   margin-left:10px;
 }
-#incorporaciones{
-  display: flex;
-  width: 95%;
-  height: 470px;
-  background-image: url(../imagenes/fondoPuertas.jpg);
-  background-size: cover;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-}
 #contacto {
-  display: flex;
-  width: 95%;
-  height: 480px;
-  margin-right: auto;
-  margin-right: auto;
+  display: grid;
+  grid-template-areas: "mapa direccion telefono"
+  "mapa datosMails datosMails";
+  grid-template-columns: 50% 24% 24%;
+  grid-template-rows: 200px 250px;
   margin-top: 5px;
 }
 #mapa {
-  width: 47%;
-  height: 450px;
-  float: left;
-  justify-items: center;
+  grid-area: mapa;
   border: 1px solid #DF3A01;
 }
-#datosSerpy {
-  width: 700px;
-  height: 450px;
-}
 #direccion {
-  width: 50%;
-  height: 180px;
-  float: left;
-  margin-left: 20px;
+  grid-area: direccion;
+  background-color: #ffffff;
 }
 .textDireccion {
   color: #0040FF;
@@ -482,18 +443,26 @@ ul.show {
   height: 30px;
   font-size: 22px;
   text-align: center;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.textTel {
+  color: #0040FF;
+  width: 80%;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
   margin-top: 30px;
+  margin-left: 30px;
 }
 #datosMails {
-  display: block;
-  width: 96%;
-  height: 240px;
+  grid-area: datosMails;
   background-color: #eca60f93;
-  margin-left: 20px;
-  margin-top: 210px;
 }
-#otrosDatos {
+#telefono {
+  grid-area: telefono;
   display: block;
+  background-color: #ffffff;
 }
 .textDatos {
   color: #0040FF;
@@ -1026,125 +995,98 @@ body {
     background-size: cover;
     border: 2px solid #FE9A2E;
   }
-  #incorporacionUno {
-    width: 20%;
-    height: 100%;
-    margin-top: 50px;
-    margin-left:10px;
-  }
-  #incorporacionDos {
-    width: 20%;
-    height: 100%;
-    margin-top: 50px;
-    margin-left:10px;
-  }
-  #incorporacionTres {
-    width: 20%;
-    height: 100%;
-    margin-top: 50px;
-    margin-left:10px;
-  }
-  #incorporacionCuatro {
-    width: 20%;
-    height: 100%;
-    margin-top: 50px;
-    margin-left:10px;
-  }
-  #incorporacionCinco {
-    width: 20%;
-    height: 100%;
-    margin-top: 50px;
-    margin-left:10px;
-  }
-  #incorporacionSeis {
-    width: 20%;
-    height: 100%;
-    margin-top: 50px;
-    margin-left:10px;
-  }
-  .textIncorp {
-    width: 180px;
-    height: 280px;
-    margin: 0;
-    color: #ffffff;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-    text-align: center;
-    float: left;
-    margin-left:10px;
-  }
-  .fotoIncorporaciones {
-    width: 100%;
-    height: 80%x;
-    background-size: cover;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 2px solid #FE9A2E;
-  }
-  .textIncorp {
-    width: 160px;
-    height: 280px;
-    margin: 0;
-    color: #ffffff;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-    text-align: center;
-    float: left;
-    margin-left:10px;
-  }
   #incorporaciones{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 800px;
     background-image: url(../imagenes/fondoPuertas.jpg);
     background-size: cover;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
   }
+  .incorporacionUno {
+    width: 15%;
+    height: 200px;
+    margin-top: 40px;
+    margin-left:5px;
+  }
+  .textIncorp {
+    width: 150px;
+    height: 280px;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    float: left;
+    margin-left:0px;
+  }
+  .fotoIncorporaciones {
+    width: 80%;
+    height: 100px;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid #FE9A2E;
+  }
+  .textIncorp {
+    width: 100px;
+    height: 250px;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    float: left;
+    margin-left:10px;
+  }
   #contacto {
-    display: block;
-    width: 95%;
-    height: 100%;
-    margin-right: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-areas: "mapa mapa" "direccion telefono"
+    "datosMails datosMails";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 200px 250px;
     margin-top: 5px;
   }
   #mapa {
-    width: 100%;
-    height: 450px;
-    justify-items: center;
-    background-color: #ffffff;
+    grid-area: mapa;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
     border: 1px solid #DF3A01;
   }
-  #datosSerpy {
-    width: 100%;
-    height: 450px;
-  }
   #direccion {
-    width: 100%;
-    height: 180px;
-    margin-left: 20px;
+    grid-area: direccion;
+    background-color: #ffffff;
   }
   .textDireccion {
-    display: flex;
-    
+    color: #0040FF;
+    width: 80%;
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .textTel {
     color: #0040FF;
     width: 80%;
     height: 30px;
     font-size: 22px;
     text-align: center;
     margin-top: 30px;
+    margin-left: 30px;
   }
   #datosMails {
-    width: 96%;
-    height: 240px;
-    margin-left: 20px;
-    margin-top: 5px;
+    grid-area: datosMails;
+    background-color: #eca60f93;
   }
-  #otrosDatos {
+  #telefono {
+    grid-area: telefono;
     display: block;
+    background-color: #ffffff;
   }
   .textDatos {
     color: #0040FF;
@@ -1667,119 +1609,85 @@ body {
     margin-top: 50px;
     margin-left: 80px;
     border: 2px solid #FE9A2E;
-  }
-  #incorporacionUno {
+  } 
+    #incorporaciones{
     display: block;
-    width: 55%;
-    height: 100%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #incorporacionDos {
-    width: 55%;
-    height: 180px;
-    margin-top: 10px;
-    margin-left:auto;
-    margin-right: auto;
-  }
-  #incorporacionTres {
-    width: 55%;
-    height: 100%;
-    margin-top: 10px;
-    margin-left:auto;
-    margin-right: auto;
-  }
-  #incorporacionCuatro {
-    width: 55%;
-    height: 100%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #incorporacionCinco {
-    width: 55%;
-    height: 100%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #incorporacionSeis {
-    width: 55%;
-    height: 100%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .fotoIncorporaciones {
-    width: 80%;
-    height: 80%;
-    background-size: cover;
-    margin-top: 10px;
-   margin-left: auto;
-   margin-right: auto;
-    border: 2px solid #FE9A2E;
-  }
-  .textIncorp {
-    width: 200px;
-    height: 180px;
-    color: #ffffff;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-  }
-  #incorporaciones{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url(../imagenes/fondoPuertas.jpg);
-    background-size: cover;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+      width: 100%;
+      height: 100%;
+      background-image: url(../imagenes/fondoPuertas.jpg);
+      background-size: cover;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .incorporacionUno {
+      width: 50%;
+      height: 370px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .textIncorp {
+      width: 150px;
+      height: 200px;
+      margin: 0;
+      color: #ffffff;
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 25px;
+      text-align: center;
+      float: left;
+      margin-left:10px;
+    }
+    .fotoIncorporaciones {
+      width: 80%;
+      height: 150px;
+      background-size: cover;
+      margin-top: 10px;
+      margin-left: 10px;
+      border: 2px solid #FE9A2E;
+    }
   #contacto {
-    display: block;
-    width: 95%;
-    height: 480px;
-    margin-right: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-areas: "mapa" "direccion""telefono"
+    "datosMails";
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 200px 200px 250px;
     margin-top: 5px;
   }
   #mapa {
-    width: 100%;
-    height: 450px;
-    float: left;
-    justify-items: center;
+    grid-area: mapa;
     border: 1px solid #DF3A01;
   }
-  #datosSerpy {
-    width: 100%;
-    height: 450px;
-  }
   #direccion {
-    width: 96%;
-    height: 180px;
+    grid-area: direccion;
     background-color: #ffffff;
-    float: left;
-    margin-left: 20px;
   }
   .textDireccion {
     color: #0040FF;
+    width: 80%;
+    height: 30px;
     font-size: 22px;
     text-align: center;
-    float: left;
+    margin-top: 40px;
     margin-left: 30px;
-    margin-top: 20px;
+  }
+  .textTel {
+    color: #0040FF;
+    width: 80%;
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30px;
   }
   #datosMails {
-    width: 96%;
-    height: 225px;
+    grid-area: datosMails;
     background-color: #eca60f93;
-    margin-left: 20px;
-    margin-top: 20px;
+  }
+  #telefono {
+    grid-area: telefono;
+    display: block;
+    background-color: #ffffff;
   }
   .textDatos {
     color: #0040FF;
@@ -1789,7 +1697,7 @@ body {
     margin-left: 30px;
     margin-top: 2px;
   }
-  .subProductos {
+.subProductos {
     display: block;
     width: 100%;
     height: 100%;
