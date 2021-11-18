@@ -1622,7 +1622,7 @@ body {
     }
     .incorporacionUno {
       width: 50%;
-      height: 370px;
+      height: 380px;
       margin-top: 20px;
       margin-left: auto;
       margin-right: auto;
@@ -1656,6 +1656,7 @@ body {
   }
   #mapa {
     grid-area: mapa;
+    width: 300px;
     border: 1px solid #DF3A01;
   }
   #direccion {
